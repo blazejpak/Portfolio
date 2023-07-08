@@ -1,0 +1,8 @@
+@use "./globals//reset";
+@use "./globals/variables";
+@use "./globals/mixins";
+@use "./globals/typography";
+
+@use "./pages/RootPage.scss";
+
+@use "./components/Navbar.scss";

@@ -1,0 +1,33 @@
+@use "../globals/mixins";
+@use "../globals/variables";
+
+.navbar {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: variables.$primary-color;
+  padding: 10px 20px;
+
+  &_toggle {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 21px;
+    width: 30px;
+
+    &--bar {
+      height: 3px;
+      background-color: variables.$secondary-color--bg;
+      border-radius: 10px;
+    }
+  }
+
+  &_links ul {
+    display: none;
+  }
+}
