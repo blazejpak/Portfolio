@@ -1,0 +1,13 @@
+@use "../globals/variables";
+
+.layout {
+  display: grid;
+  grid-template-rows: 104px 1fr 375px;
+  min-height: 100vh;
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+  .layout {
+    grid-template-rows: 104px 1fr 80px;
+  }
+}

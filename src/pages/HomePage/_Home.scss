@@ -1,0 +1,40 @@
+@use "../../globals/variables";
+
+.home {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.line {
+  margin-top: 3.2rem;
+  height: 1px;
+  width: 100%;
+  background-color: variables.$primary-color;
+  opacity: 0.15;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  h2 {
+    font-size: 4rem;
+    margin-top: 3.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+}

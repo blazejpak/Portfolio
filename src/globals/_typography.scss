@@ -8,29 +8,30 @@ h3 {
 
 h1 {
   font-weight: bold;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 5rem;
+  line-height: 5rem;
   letter-spacing: -0.45px;
+  color: #33323d;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 4rem;
+  line-height: 4.2rem;
   letter-spacing: -0.36px;
 }
 
 h3 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
   letter-spacing: -0.29px;
 }
 
 p {
   font-family: "Public Sans";
-  line-height: 30px;
+  line-height: 3rem;
 
   .smallerText {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }

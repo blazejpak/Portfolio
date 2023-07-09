@@ -1,0 +1,55 @@
+@use "../globals/variables";
+
+.footer {
+  margin-top: 2rem;
+  height: 100%;
+  background-color: variables.$primary-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  &_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  &_link {
+    color: variables.$secondary-color--bg;
+    letter-spacing: 2px;
+  }
+
+  &_external {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    &--fem {
+      background-color: variables.$secondary-color--bg;
+      border-radius: 50%;
+      padding: 1px;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    &_links {
+      flex-direction: row;
+    }
+
+    &_external {
+      justify-items: flex-end;
+    }
+  }
+}

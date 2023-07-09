@@ -1,0 +1,28 @@
+@use "../globals/mixins";
+@use "../globals/variables";
+
+.button {
+  width: 20rem;
+  display: flex;
+  cursor: pointer;
+
+  &_arrow {
+    background-color: variables.$primary-color;
+    width: 4.8rem;
+    height: 4.8rem;
+
+    @include mixins.flexCenter;
+  }
+
+  &_text {
+    background-color: variables.$primary-color--component;
+    @include mixins.flexCenter;
+    width: 15.2rem;
+
+    &--style {
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 2px;
+    }
+  }
+}

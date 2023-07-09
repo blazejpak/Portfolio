@@ -3,6 +3,16 @@
 @use "./globals/mixins";
 @use "./globals/typography";
 
-@use "./pages/RootPage.scss";
+@use "./pages/RootPage";
 
-@use "./components/Navbar.scss";
+@use "./components/Navbar";
+@use "./components/Footer";
+
+@use "./UI/Button";
+
+@use "./pages/HomePage/Home";
+@use "./pages//HomePage/Skills";
+
+html {
+  font-size: 62.5%;
+}

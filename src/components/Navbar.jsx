@@ -1,31 +1,120 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
-import Logo from "./Logo";
+import { CgMenu } from "react-icons/cg";
+import { RxCross1 } from "react-icons/rx";
+
+import Logo from "../UI/Logo";
 
 const Navbar = () => {
+  const location = useLocation();
   const [active, setActive] = useState(false);
 
   return (
     <header>
       <nav className="navbar">
-        <Logo />
-        <Link className="navbar_toggle">
-          <span className="navbar_toggle--bar"></span>
-          <span className="navbar_toggle--bar"></span>
-          <span className="navbar_toggle--bar"></span>
+        <Logo color="#33323d" />
+        <Link
+          className="navbar_toggle"
+          onClick={() => setActive((currState) => !currState)}
+        >
+          {!active ? <CgMenu size={32} /> : <RxCross1 size={32} />}
         </Link>
+        <AnimatePresence>
+          {active && (
+            <motion.div
+              variants={{
+                open: {
+                  x: 0,
+                },
+                closed: {
+                  x: "100vw",
+                },
+              }}
+              key="navbar_menu"
+              className="navbar_menu"
+              initial="closed"
+              animate="open"
+              transition={{
+                duration: 0.3,
+              }}
+              exit="closed"
+            >
+              <ul>
+                <li>
+                  <Link
+                    to="/"
+                    className={`navbar_link ${
+                      location.pathname === "/" ? "navbar_link--active" : ""
+                    }`}
+                  >
+                    HOME
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/portfolio"
+                    className={`navbar_link ${
+                      location.pathname === "/portfolio"
+                        ? "navbar_link--active"
+                        : ""
+                    }`}
+                  >
+                    PORTFOLIO
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className={`navbar_link ${
+                      location.pathname === "/contact"
+                        ? "navbar_link--active"
+                        : ""
+                    }`}
+                  >
+                    CONTACT ME
+                  </Link>
+                </li>
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
         <div className="navbar_links">
           <ul>
             <li>
-              <Link to="/">HOME</Link>
+              <Link
+                to="/"
+                className={`navbar_link ${
+                  location.pathname === "/" ? "navbar_link--active" : ""
+                }`}
+              >
+                HOME
+              </Link>
             </li>
 
             <li>
-              <Link to="/portfolio">PORTFOLIO</Link>
+              <Link
+                to="/portfolio"
+                className={`navbar_link ${
+                  location.pathname === "/portfolio"
+                    ? "navbar_link--active"
+                    : ""
+                }`}
+              >
+                PORTFOLIO
+              </Link>
             </li>
             <li>
-              <Link to="/contact">CONTACT ME</Link>
+              <Link
+                to="/contact"
+                className={`navbar_link ${
+                  location.pathname === "/contact" ? "navbar_link--active" : ""
+                }`}
+              >
+                CONTACT ME
+              </Link>
             </li>
           </ul>
         </div>

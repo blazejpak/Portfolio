@@ -1,0 +1,58 @@
+@use "../../globals/variables";
+
+.skills {
+  height: 480px;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem;
+
+  &--text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    &--1 {
+      background-color: #3c40c6;
+    }
+    &--2 {
+      background-color: #ef5777;
+    }
+    &--3 {
+      background-color: #4bcffa;
+    }
+    &--4 {
+      background-color: #0be881;
+    }
+    &--5 {
+      background-color: #ffc048;
+    }
+    &--6 {
+      background-color: #ff3f34;
+    }
+    &--7 {
+      background-color: #1e272e;
+    }
+    &--8 {
+      background-color: #ffa801;
+    }
+    &--9 {
+      background-color: #05c46b;
+    }
+    &--10 {
+      background-color: #f53b57;
+    }
+    &--11 {
+      background-color: #575fcf;
+    }
+
+    p {
+      text-transform: uppercase;
+      color: variables.$secondary-color--bg;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}
