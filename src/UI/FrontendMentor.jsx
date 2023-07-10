@@ -4,8 +4,8 @@ const FrontendMentor = () => {
   return (
     <svg
       role="img"
-      height="23"
-      width="24"
+      height="20"
+      width="21"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

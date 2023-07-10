@@ -6,9 +6,14 @@
   display: flex;
   cursor: pointer;
 
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
+
   &_arrow {
     background-color: variables.$primary-color;
-    width: 4.8rem;
+    width: 20%;
     height: 4.8rem;
 
     @include mixins.flexCenter;
@@ -17,12 +22,24 @@
   &_text {
     background-color: variables.$primary-color--component;
     @include mixins.flexCenter;
-    width: 15.2rem;
+    width: 80%;
 
     &--style {
       text-transform: uppercase;
       color: white;
       letter-spacing: 2px;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-phone) {
+  .button {
+    width: 25rem;
+
+    &_text {
+      &--style {
+        font-size: 1.6rem;
+      }
     }
   }
 }

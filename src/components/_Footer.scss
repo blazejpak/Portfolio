@@ -1,7 +1,6 @@
 @use "../globals/variables";
 
 .footer {
-  margin-top: 2rem;
   height: 100%;
   background-color: variables.$primary-color;
 
@@ -21,6 +20,7 @@
   &_link {
     color: variables.$secondary-color--bg;
     letter-spacing: 2px;
+    font-size: 1.8rem;
   }
 
   &_external {
@@ -32,7 +32,15 @@
     &--fem {
       background-color: variables.$secondary-color--bg;
       border-radius: 50%;
-      padding: 1px;
+      padding: 3px;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-phone) {
+  .footer {
+    &_link {
+      font-size: 2.4rem;
     }
   }
 }
@@ -46,6 +54,10 @@
 
     &_links {
       flex-direction: row;
+    }
+
+    &_link {
+      font-size: 2rem;
     }
 
     &_external {

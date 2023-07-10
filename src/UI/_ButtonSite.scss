@@ -1,0 +1,33 @@
+@use "../globals/variables";
+@use "../globals/mixins";
+
+.button-site {
+  margin-top: 2.4rem;
+  height: 4.8rem;
+  width: 20rem;
+  border: 2px solid variables.$secondary-color--text-field;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: variables.$secondary-color--text-field;
+  }
+
+  @include mixins.flexCenter;
+
+  &_text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: variables.$breakpoint-phone) {
+  .button-site {
+    height: 5.6rem;
+    width: 25rem;
+
+    &_text {
+      font-size: 1.6rem;
+    }
+  }
+}

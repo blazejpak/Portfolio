@@ -1,14 +1,63 @@
 @use "../../globals/variables";
+@use "../../globals/mixins";
 
 .home {
+  position: relative;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  &_absolute {
+    @include mixins.flexCenter;
+    background-color: variables.$secondary-color--bg;
+    border: 1px solid variables.$secondary-color--text-field;
+    border-radius: 9999px;
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+
+    &--icon {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  &_scroll {
+    @include mixins.flexCenter;
+    border: 1px solid variables.$secondary-color--text-field;
+    border-radius: 9999px;
+    height: 6rem;
+    width: 6rem;
+
+    &:hover {
+      transition: all 0.3s;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      background-color: variables.$secondary-color--text-field;
+    }
+    &--icon {
+      cursor: pointer;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
 }
 
 .hero {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 6.4rem;
+
+  height: calc(100vh - 104px);
 
   h1 {
     font-size: 4rem;
@@ -16,7 +65,8 @@
 }
 
 .line {
-  margin-top: 3.2rem;
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
   height: 1px;
   width: 100%;
   background-color: variables.$primary-color;
@@ -24,17 +74,96 @@
 }
 
 .about {
-  display: flex;
+  @include mixins.flexCenter;
   flex-direction: column;
   gap: 3.2rem;
+  height: 100vh;
 
   h2 {
     font-size: 4rem;
-    margin-top: 3.2rem;
   }
 
-  p {
+  &_text {
     font-size: 1.6rem;
     line-height: 30px;
+  }
+}
+
+.skills {
+  @include mixins.flexCenter;
+  gap: 3.2rem;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.interest {
+  @include mixins.flexCenter;
+  flex-direction: column;
+  gap: 4rem;
+  height: calc(100vh - 375px);
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: variables.$breakpoint-phone) {
+  .hero {
+    h1 {
+      font-size: 5.6rem;
+    }
+  }
+
+  .about {
+    gap: 4.8rem;
+
+    h2 {
+      font-size: 4.8rem;
+    }
+
+    &_text {
+      font-size: 1.8rem;
+      line-height: 30px;
+    }
+  }
+  .skills {
+    gap: 4.8rem;
+
+    h2 {
+      font-size: 4.8rem;
+    }
+  }
+
+  .interest {
+    gap: 4.8rem;
+
+    h2 {
+      font-size: 4.8rem;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+  .interest {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media (min-width: variables.$breakpoint-desktop) {
+  .home {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .skills {
+    gap: 4.8rem;
+
+    h2 {
+      font-size: 5.6rem;
+    }
+  }
+
+  .interest {
+    gap: 6.4rem;
   }
 }

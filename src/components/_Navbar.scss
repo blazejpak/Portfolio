@@ -16,7 +16,7 @@
     top: 104px;
     right: 32px;
 
-    height: 20vh;
+    height: 15rem;
     width: 50vw;
     background-color: variables.$primary-color;
     border-radius: 3px;
@@ -29,7 +29,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 3rem;
+      padding: 2rem;
     }
   }
 
