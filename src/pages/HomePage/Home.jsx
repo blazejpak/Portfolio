@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import Button from "../../UI/button";
 import Skills from "./Skills";
+import Button from "../../UI/Button";
 import ButtonSite from "../../UI/ButtonSite";
 import { BsArrowBarDown, BsArrowBarUp } from "react-icons/bs";
 
