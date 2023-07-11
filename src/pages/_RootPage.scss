@@ -11,3 +11,12 @@
     grid-template-rows: 104px 1fr 80px;
   }
 }
+
+.line {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+  height: 1px;
+  width: 100%;
+  background-color: variables.$primary-color;
+  opacity: 0.15;
+}

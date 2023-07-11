@@ -1,0 +1,27 @@
+.portfolio {
+  width: 100vw;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+
+  &_image {
+    max-width: 311px;
+
+    &--detail {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &_info {
+    margin-top: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+    }
+  }
+}

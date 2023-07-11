@@ -1,32 +1,43 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../../UI/button";
 import Skills from "./Skills";
 import ButtonSite from "../../UI/ButtonSite";
 import { BsArrowBarDown, BsArrowBarUp } from "react-icons/bs";
 
 const Home = () => {
+  const [scrollUpVisible, setScrollUpVisible] = useState(false);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const interestRef = useRef(null);
 
-  let scrollUp;
   useEffect(() => {
-    if (window.scrollY > window.innerHeight) {
-      scrollUp = (
-        <div className="home_absolute">
-          <BsArrowBarUp
-            className="home_absolute--icon"
-            onClick={() =>
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-            }
-          />
-        </div>
-      );
-    }
-  }, [window.scrollY, window.innerHeight]);
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight - 50) {
+        setScrollUpVisible(true);
+      } else {
+        setScrollUpVisible(false);
+      }
+    };
 
-  console.log(window);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  let scrollUp;
+  if (scrollUpVisible) {
+    scrollUp = (
+      <div
+        className="home_absolute"
+        onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+      >
+        <BsArrowBarUp className="home_absolute--icon" />
+      </div>
+    );
+  }
 
   return (
     <main className="home" ref={homeRef}>

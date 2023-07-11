@@ -7,12 +7,13 @@
 
 @use "./components/Navbar";
 @use "./components/Footer";
+@use "./pages//HomePage/Skills";
 
 @use "./UI/Button";
 @use "./UI/ButtonSite";
 
 @use "./pages/HomePage/Home";
-@use "./pages//HomePage/Skills";
+@use "./pages/PortfolioPage/Portfolio";
 
 html {
   font-size: 62.5%;

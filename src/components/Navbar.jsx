@@ -11,14 +11,17 @@ const Navbar = () => {
   const location = useLocation();
   const [active, setActive] = useState(false);
 
+  const activeHandler = (e) => {
+    e.preventDefault();
+
+    setActive((currState) => !currState);
+  };
+
   return (
     <header>
       <nav className="navbar">
         <Logo color="#33323d" />
-        <Link
-          className="navbar_toggle"
-          onClick={() => setActive((currState) => !currState)}
-        >
+        <Link className="navbar_toggle" onClick={activeHandler}>
           {!active ? <CgMenu size={32} /> : <RxCross1 size={32} />}
         </Link>
         <AnimatePresence>
