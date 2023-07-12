@@ -1,16 +1,15 @@
 import ButtonSite from "../../UI/ButtonSite";
 import imgPlanetsFacts from "../../assets/images/planetFacts.webp";
 
-const PlanetFacts = () => {
+const PlanetFacts = ({ index }) => {
+  const isEven = index % 2 === 0;
   return (
-    <div className="portfolio_box">
-      <div className="portfolio_image">
-        <img
-          src={imgPlanetsFacts}
-          alt="Entertainment app"
-          className="portfolio_image--detail"
-        />
-      </div>
+    <div className={`portfolio_box ${isEven ? "portfolio_box--reverse" : ""}`}>
+      <img
+        src={imgPlanetsFacts}
+        alt="Entertainment app"
+        className="portfolio_image--detail"
+      />
       <div className="portfolio_info">
         <h2>Planets Facts</h2>
         <p>
@@ -19,7 +18,7 @@ const PlanetFacts = () => {
           for the areas that required interactivity, such as the testimonial
           slider.
         </p>
-        <ButtonSite text="view project" />
+        <ButtonSite text="view project" link="/portfolio/planetfacts" />
       </div>
     </div>
   );

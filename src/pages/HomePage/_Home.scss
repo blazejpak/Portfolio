@@ -32,7 +32,7 @@
     @include mixins.flexCenter;
     border: 1px solid variables.$secondary-color--text-field;
     border-radius: 9999px;
-    height: 6rem;
+    min-height: 6rem;
     width: 6rem;
 
     &:hover {

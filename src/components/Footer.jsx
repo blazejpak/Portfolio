@@ -17,7 +17,11 @@ const Footer = () => {
         </li>
 
         <li>
-          <Link to="/portfolio" className="footer_link">
+          <Link
+            to="/portfolio"
+            className="footer_link"
+            preventScrollReset={true}
+          >
             PORTFOLIO
           </Link>
         </li>

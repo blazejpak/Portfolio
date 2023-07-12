@@ -9,16 +9,15 @@ const Portfolio = () => {
   return (
     <main className="portfolio">
       <section>
-        <Entertainment />
+        <Entertainment index={1} />
         <div className="line"></div>
-        <Dictionary />
+        <Dictionary index={2} />
         <div className="line"></div>
-        <PlanetFacts />
+        <PlanetFacts index={3} />
         <div className="line"></div>
-        <RestCountries />
+        <RestCountries index={4} />
         <div className="line"></div>
-        <Todo />
-        <div className="line"></div>
+        <Todo index={5} />
       </section>
     </main>
   );

@@ -1,16 +1,16 @@
 import ButtonSite from "../../UI/ButtonSite";
-import imgDictionary from "../../assets/images/dictionary_dark.webp";
+import imgDictionary from "../../assets/images/dictionary.webp";
 
-const Dictionary = () => {
+const Dictionary = ({ index }) => {
+  const isEven = index % 2 === 0;
+
   return (
-    <div className="portfolio_box">
-      <div className="portfolio_image">
-        <img
-          src={imgDictionary}
-          alt="Entertainment app"
-          className="portfolio_image--detail"
-        />
-      </div>
+    <div className={`portfolio_box ${isEven ? "portfolio_box--reverse" : ""}`}>
+      <img
+        src={imgDictionary}
+        alt="Entertainment app"
+        className="portfolio_image--detail"
+      />
       <div className="portfolio_info">
         <h2>Dictionary</h2>
         <p>
@@ -19,7 +19,7 @@ const Dictionary = () => {
           for the areas that required interactivity, such as the testimonial
           slider.
         </p>
-        <ButtonSite text="view project" />
+        <ButtonSite text="view project" link="/portfolio/dictionary" />
       </div>
     </div>
   );

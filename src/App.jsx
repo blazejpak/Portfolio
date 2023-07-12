@@ -10,6 +10,7 @@ import Contact from "./pages/ContactPage/Contact";
 import Portfolio from "./pages/PortfolioPage/Portfolio";
 import Error from "./pages/ErrorPage";
 import Root from "./pages/RootPage";
+import PortfolioDetail from "./pages/PortfolioDetailPage/PortfolioDetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +22,11 @@ const router = createBrowserRouter(
         errorElement={<Error />}
         element={<Portfolio />}
       />
-      <Route path="/portfolio/:id" />
+      <Route
+        path="/portfolio/:id"
+        element={<PortfolioDetail />}
+        errorElement={<Error />}
+      />
     </Route>
   )
 );
