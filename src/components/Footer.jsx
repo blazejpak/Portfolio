@@ -34,10 +34,10 @@ const Footer = () => {
 
       <div className="footer_external">
         <a href="https://github.com/blazejpak">
-          <GitHub />
+          <GitHub fill="#fff" />
         </a>
         <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpl.linkedin.com%2F">
-          <Linkedin />
+          <Linkedin fill="#fff" />
         </a>
         <div className="footer_external--fem">
           <a href="https://www.frontendmentor.io/profile/blazejpak">

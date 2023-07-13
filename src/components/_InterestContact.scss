@@ -1,0 +1,35 @@
+@use "../globals/mixins";
+@use "../globals/variables";
+
+.interest {
+  @include mixins.flexCenter;
+  flex-direction: column;
+  gap: 4rem;
+  height: calc(100vh - 375px);
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: variables.$breakpoint-phone) {
+  .interest {
+    gap: 4.8rem;
+
+    h2 {
+      font-size: 4.8rem;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+  .interest {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media (min-width: variables.$breakpoint-desktop) {
+  .interest {
+    gap: 6.4rem;
+  }
+}

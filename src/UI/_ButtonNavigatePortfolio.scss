@@ -1,0 +1,58 @@
+@use "../globals/variables";
+
+.navigate-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 146px;
+
+  &_box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    &--left {
+      align-items: flex-start;
+    }
+
+    &--right {
+      align-items: flex-end;
+    }
+
+    gap: 1.6rem;
+  }
+
+  &_text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    p {
+      opacity: 0.5;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+
+    &--heading {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.lineWidth {
+  height: 1px;
+  width: 100%;
+  background-color: variables.$secondary-color--text-field;
+}
+
+.lineHeight {
+  height: 146px;
+  width: 1px;
+  background-color: variables.$secondary-color--text-field;
+}

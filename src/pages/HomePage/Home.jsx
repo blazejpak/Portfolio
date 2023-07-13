@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Skills from "./Skills";
+import InterestContact from "../../components/InterestContact";
 import Button from "../../UI/Button";
 import ButtonSite from "../../UI/ButtonSite";
 import { BsArrowBarDown, BsArrowBarUp } from "react-icons/bs";
@@ -92,11 +93,7 @@ const Home = () => {
           />
         </div>
       </section>
-
-      <section className="interest" ref={interestRef}>
-        <h2>Interested in doing a project together?</h2>
-        <ButtonSite text="contact me" link="/contact" />
-      </section>
+      <InterestContact pickedRef={interestRef} />
     </main>
   );
 };

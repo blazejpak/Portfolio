@@ -1,9 +1,105 @@
-.detail {
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
-  margin-bottom: 6.4rem;
+@use "../../globals/variables";
 
-  &_image {
-    width: 100%;
+.detail-section {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &_skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    &--text {
+      margin-top: 2.4rem;
+      color: variables.$primary-color--extra;
+    }
+  }
+
+  &_images {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 6.4rem;
+
+    &--heading {
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      height: 310px;
+    }
+    &--image {
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &--heading {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+  .detail-section {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    &_subject {
+      display: flex;
+      align-items: center;
+      gap: 6.4rem;
+    }
+
+    &_images {
+      &--heading {
+        height: 360px;
+      }
+    }
+
+    &_skills {
+      &--text {
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-desktop) {
+  .detail-section {
+    &_content {
+      display: flex;
+      gap: 6.4rem;
+    }
+
+    &_subject {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      gap: 2.4rem;
+    }
+
+    &_images {
+      &--heading {
+        height: 500px;
+      }
+    }
+
+    &_skills {
+      &--text {
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+    }
+
+    &_box {
+      margin-top: 6.4rem;
+    }
   }
 }
