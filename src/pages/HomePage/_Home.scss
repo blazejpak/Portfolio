@@ -84,7 +84,7 @@
   @include mixins.flexCenter;
   gap: 3.2rem;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
 }
 
 @media (min-width: variables.$breakpoint-phone) {

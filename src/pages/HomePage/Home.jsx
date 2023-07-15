@@ -50,6 +50,7 @@ const Home = () => {
           onClick={() =>
             aboutRef.current.scrollIntoView({
               behavior: "smooth",
+              block: "center",
             })
           }
         />
@@ -73,6 +74,7 @@ const Home = () => {
             onClick={() =>
               skillsRef.current.scrollIntoView({
                 behavior: "smooth",
+                block: "end",
               })
             }
           />
