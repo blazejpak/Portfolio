@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-height: variables.$breakpoint-tablet) {
+@media (max-height: variables.$breakpoint-phone) {
   .interest {
     margin-bottom: 1rem;
     gap: 2rem;

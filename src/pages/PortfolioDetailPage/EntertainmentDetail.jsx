@@ -20,14 +20,14 @@ const EntertainmentDetail = () => {
             <div>
               <h2 className="detail-section--heading">Entertainment App</h2>
               <p>
-                This project required me to build a fully responsive landing
-                page to the designs provided. I used HTML5, along with CSS Grid
-                and JavaScript for the areas that required interactivity, such
-                as the testimonial slider.
+                Fully responsive multi-page Entertainment App where you can sign
+                in / sign up, search and bookmark favorite movie / serial.
               </p>
             </div>
             <div className="detail-section_skills">
-              <p className="detail-section_skills--text">HTML / CSS / JS</p>
+              <p className="detail-section_skills--text">
+                TAILWINDCSS / REACT / REACT-ROUTER / FIREBASE
+              </p>
               <div className="detail-section_skills--buttons">
                 <ButtonExternal
                   text="LIVE"
@@ -46,14 +46,13 @@ const EntertainmentDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was a front-end challenge from Frontend Mentor. It’s
-              a platform that enables you to practice building websites to a
-              design and project brief. Each challenge includes mobile and
-              desktop designs to show how the website should look at different
-              screen sizes. Creating these projects has helped me refine my
-              workflow and solve real-world coding problems. I’ve learned
-              something new with each project, helping me to improve and adapt
-              my style.
+              This project was designed by FrontEnd Mentor in Figma and coded by
+              me. I used React with hooks like useContext, useEffect, and
+              useState to manage application. For navigation, I employed
+              React-Router. Authentication was implemented using firebase. To
+              style the app I used TailwindCSS. This project contains static
+              data that allows you to search, filter, and bookmark series and
+              movies.
             </p>
           </div>
           <div>

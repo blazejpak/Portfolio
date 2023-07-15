@@ -44,7 +44,9 @@ const Home = () => {
     <main className="home" ref={homeRef}>
       {scrollUp}
       <section className="hero">
-        <h1>Hey, I'm Błażej Pakuła and I love building beautiful websites</h1>
+        <p className="hero_text">Hi, my name is</p>
+        <h1 className="hero_heading-primary">Błażej Pakuła</h1>
+        <h2 className="hero_heading-secondary">I'm a Front End Developer</h2>
         <Button
           text="about me"
           onClick={() =>
@@ -56,43 +58,48 @@ const Home = () => {
         />
       </section>
       <section className="about" id="about" ref={aboutRef}>
-        <h2>About Me</h2>
-        <p className="about_text">
-          I’m a junior front-end developer looking for a new role in an exciting
-          company. I focus on writing accessible HTML, using modern CSS
-          practices and writing clean JavaScript. When writing JavaScript code,
-          I mostly use React, but I can adapt to whatever tools are required.
-          I’m based in London, UK, but I’m happy working remotely and have
-          experience in remote teams. When I’m not coding, you’ll find me
-          outdoors. I love being out in nature whether that’s going for a walk,
-          run or cycling. I’d love you to check out my work.
-        </p>
+        <h2>About</h2>
+        <div className="about_box">
+          <p className="about_text">
+            Hi. I'm Błażej, nice to meet you. Please feel free to look around.
+          </p>
+          <p className="about_text--more">
+            I am a passionate programmer specializing in responsive design.
+            Mainly, I use React and TailwindCSS, but I feel flexible enough to
+            use, for example, SCSS for styling. I try my best to create the most
+            user-friendly interfaces for various devices. I am based in
+            Wejherowo, Poland, but I have no issue with working remotely or
+            relocating if needed. When I am not coding, I try to find time for
+            swimming and cycling. Additionally, I am a fan of books, movies, the
+            world, and everything related to the Harry Potter series.
+          </p>
+        </div>
         <ButtonSite text="go to portfolio" link="/portfolio" />
-        <div className="home_scroll">
-          <BsArrowBarDown
-            className="home_scroll--icon"
-            onClick={() =>
-              skillsRef.current.scrollIntoView({
-                behavior: "smooth",
-                block: "end",
-              })
-            }
-          />
+        <div
+          className="home_scroll"
+          onClick={() =>
+            skillsRef.current.scrollIntoView({
+              behavior: "smooth",
+              block: "end",
+            })
+          }
+        >
+          <BsArrowBarDown className="home_scroll--icon" />
         </div>
       </section>
       <section className="skills" ref={skillsRef}>
         <h2>Skills</h2>
 
         <Skills />
-        <div className="home_scroll">
-          <BsArrowBarDown
-            className="home_scroll--icon"
-            onClick={() =>
-              interestRef.current.scrollIntoView({
-                behavior: "smooth",
-              })
-            }
-          />
+        <div
+          className="home_scroll"
+          onClick={() =>
+            interestRef.current.scrollIntoView({
+              behavior: "smooth",
+            })
+          }
+        >
+          <BsArrowBarDown className="home_scroll--icon" />
         </div>
       </section>
       <InterestContact pickedRef={interestRef} />

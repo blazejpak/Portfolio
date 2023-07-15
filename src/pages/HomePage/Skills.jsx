@@ -31,9 +31,6 @@ const Skills = () => {
         <p>Git</p>
       </div>
       <div className="skills_box--text skills_box--text--10">
-        <p>Figma</p>
-      </div>
-      <div className="skills_box--text skills_box--text--11">
         <p>Axios</p>
       </div>
     </div>

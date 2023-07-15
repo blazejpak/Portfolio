@@ -12,12 +12,10 @@ const Entertainment = ({ index }) => {
         className="portfolio_image--detail"
       />
       <div className="portfolio_info">
-        <h2>Entertainment</h2>
+        <h2>Entertainment App</h2>
         <p>
-          This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Grid and JavaScript
-          for the areas that required interactivity, such as the testimonial
-          slider.
+          Fully responsive multi-page Entertainment App where you can sign in /
+          sign up, search and bookmark favorite movie / serial.
         </p>
         <ButtonSite text="view project" link="/portfolio/entertainment" />
       </div>

@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    padding: 0 1rem;
 
     &--1 {
       background-color: #3c40c6;
@@ -44,9 +45,9 @@
     &--10 {
       background-color: #f53b57;
     }
-    &--11 {
-      background-color: #575fcf;
-    }
+    // &--11 {
+    //   background-color: #575fcf;
+    // }
 
     p {
       text-transform: uppercase;

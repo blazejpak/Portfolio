@@ -26,6 +26,18 @@
     margin-bottom: 6.4rem;
     gap: 2.4rem;
 
+    &--error {
+      font-size: 1rem;
+      color: #f43030;
+      font-weight: bold;
+    }
+
+    &--submit-box {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+    }
+
     &--label {
       font-size: 1.3rem;
       font-weight: bold;
@@ -52,6 +64,11 @@
         opacity: 0.2;
         color: variables.$primary-color;
       }
+
+      &:focus,
+      &:active {
+        border: 1px solid variables.$primary-color--extra;
+      }
     }
 
     &--message {
@@ -67,21 +84,45 @@
         color: variables.$primary-color;
         opacity: 0.2;
       }
+
+      &:focus,
+      &:active {
+        border: 1px solid variables.$primary-color--extra;
+      }
     }
 
     &--button {
       color: variables.$secondary-color--text-field;
       background-color: variables.$primary-color--component;
       text-transform: uppercase;
+      cursor: pointer;
 
       width: 200px;
       height: 48px;
+
+      transition: all 0.3s;
+
+      &-mesage {
+        font-size: 1.6rem;
+        color: variables.$primary-color--extra;
+      }
+
+      &:hover {
+        scale: 1.05;
+      }
+
+      &:focus {
+        scale: 1.1;
+      }
     }
   }
 }
 
 @media (min-width: variables.$breakpoint-desktop) {
   .contact {
+    padding-left: 10%;
+    padding-right: 10%;
+
     &_info {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

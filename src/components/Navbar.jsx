@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -10,6 +10,22 @@ import Logo from "../UI/Logo";
 const Navbar = () => {
   const location = useLocation();
   const [active, setActive] = useState(false);
+
+  const menuRef = useRef();
+
+  useEffect(() => {
+    const menuOutsideHandle = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setActive(false);
+      }
+    };
+
+    document.addEventListener("mousedown", menuOutsideHandle);
+
+    return () => {
+      document.removeEventListener("mousedown", menuOutsideHandle);
+    };
+  }, []);
 
   const activeHandler = (e) => {
     e.preventDefault();
@@ -27,6 +43,7 @@ const Navbar = () => {
         <AnimatePresence>
           {active && (
             <motion.div
+              ref={menuRef}
               variants={{
                 open: {
                   x: 0,
