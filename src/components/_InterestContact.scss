@@ -33,3 +33,28 @@
     gap: 6.4rem;
   }
 }
+
+@media (max-height: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-phone) {
+  .interest {
+    margin-bottom: 1rem;
+    gap: 2rem;
+    height: calc(100dvh - 375px);
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-height: variables.$breakpoint-tablet) {
+  .interest {
+    margin-bottom: 1rem;
+    gap: 2rem;
+    height: 100vh;
+    height: 100dvh;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

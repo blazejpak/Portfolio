@@ -16,7 +16,7 @@ const Skills = () => {
         <p>TailwindCSS</p>
       </div>
       <div className="skills_box--text skills_box--text--5">
-        <p>Javascript (ES6+)</p>
+        <p>Javascript </p>
       </div>
       <div className="skills_box--text skills_box--text--6">
         <p>React</p>

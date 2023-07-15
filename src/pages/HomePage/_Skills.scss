@@ -76,3 +76,10 @@
     min-width: 640px;
   }
 }
+
+@media (max-height: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-phone) {
+  .skills_box {
+    height: 300px;
+    max-width: 300px;
+  }
+}
