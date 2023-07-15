@@ -29,8 +29,14 @@ const PlanetFactsDetail = () => {
             <div className="detail-section_skills">
               <p className="detail-section_skills--text">HTML / CSS / JS</p>
               <div className="detail-section_skills--buttons">
-                <ButtonExternal text="LIVE" link="#" />
-                <ButtonExternal text="GITHUB" link="#" />
+                <ButtonExternal
+                  text="LIVE"
+                  link="https://planets-fact-site-blazejpak.vercel.app/"
+                />
+                <ButtonExternal
+                  text="GITHUB"
+                  link="https://github.com/blazejpak/planets-fact-site"
+                />
               </div>
             </div>
           </div>

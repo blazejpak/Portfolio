@@ -30,8 +30,14 @@ const DictionaryDetail = () => {
             <div className="detail-section_skills">
               <p className="detail-section_skills--text">HTML / CSS / JS</p>
               <div className="detail-section_skills--buttons">
-                <ButtonExternal text="LIVE" link="#" />
-                <ButtonExternal text="GITHUB" link="#" />
+                <ButtonExternal
+                  text="LIVE"
+                  link="https://dictionary-web-app-blazejpak.vercel.app/"
+                />
+                <ButtonExternal
+                  text="GITHUB"
+                  link="https://github.com/blazejpak/dictionary-web-app"
+                />
               </div>
             </div>
           </div>
