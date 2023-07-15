@@ -77,9 +77,16 @@
   }
 }
 
-@media (max-height: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-phone) {
+@media (max-height: variables.$breakpoint-phone) and (max-width: variables.$breakpoint-phone--small) {
   .skills_box {
     height: 300px;
+    max-width: 300px;
+  }
+}
+
+@media (min-height: variables.$breakpoint-phone) {
+  .skills_box {
+    height: 400px;
     max-width: 300px;
   }
 }
