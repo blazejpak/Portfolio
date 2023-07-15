@@ -33,16 +33,12 @@ const Footer = () => {
       </ul>
 
       <div className="footer_external">
-        <a href="https://github.com/blazejpak">
-          <GitHub fill="#fff" />
-        </a>
-        <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpl.linkedin.com%2F">
-          <Linkedin fill="#fff" />
-        </a>
+        <GitHub fill="#fff" />
+
+        <Linkedin fill="#fff" />
+
         <div className="footer_external--fem">
-          <a href="https://www.frontendmentor.io/profile/blazejpak">
-            <Fem />
-          </a>
+          <Fem />
         </div>
       </div>
     </footer>

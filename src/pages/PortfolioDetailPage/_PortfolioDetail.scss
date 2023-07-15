@@ -19,6 +19,12 @@
       margin-top: 2.4rem;
       color: variables.$primary-color--extra;
     }
+
+    &--buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
   }
 
   &_images {

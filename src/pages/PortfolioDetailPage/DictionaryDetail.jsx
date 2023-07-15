@@ -29,7 +29,10 @@ const DictionaryDetail = () => {
             </div>
             <div className="detail-section_skills">
               <p className="detail-section_skills--text">HTML / CSS / JS</p>
-              <ButtonExternal text="visit website" link="#" />
+              <div className="detail-section_skills--buttons">
+                <ButtonExternal text="LIVE" link="#" />
+                <ButtonExternal text="GITHUB" link="#" />
+              </div>
             </div>
           </div>
           <div className="line"></div>

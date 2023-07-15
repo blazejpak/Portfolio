@@ -30,11 +30,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="line"></div>
-        <div>
+        <div className="contact_info">
           <h2>Contact Me</h2>
           <form className="contact_form">
             <div className="contact_form--label-input">
-              <label>Name</label>
+              <label className="contact_form--label">Name</label>
               <input
                 type="text"
                 placeholder="Błażej Pakuła"
@@ -42,7 +42,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact_form--label-input">
-              <label>Email Address</label>
+              <label className="contact_form--label">Email Address</label>
               <input
                 type="email"
                 placeholder="email@example.com"
@@ -50,14 +50,19 @@ const Contact = () => {
               />
             </div>
             <div className="contact_form--label-input">
-              <label>Message</label>
+              <label className="contact_form--label">Message</label>
               <textarea
                 type="text"
                 placeholder="How can I help?"
                 className="contact_form--message"
               />
             </div>
-            <button></button>
+
+            <input
+              type="submit"
+              value="send message"
+              className="contact_form--button"
+            />
           </form>
         </div>
       </section>

@@ -57,7 +57,7 @@
   flex-direction: column;
   gap: 6.4rem;
 
-  height: calc(100vh - 104px);
+  height: calc(100dvh - 104px);
 
   h1 {
     font-size: 4rem;
@@ -68,7 +68,7 @@
   @include mixins.flexCenter;
   flex-direction: column;
   gap: 3.2rem;
-  height: 100vh;
+  height: 100dvh;
 
   h2 {
     font-size: 4rem;

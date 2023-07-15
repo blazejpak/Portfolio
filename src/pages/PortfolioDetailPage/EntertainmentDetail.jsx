@@ -28,7 +28,16 @@ const EntertainmentDetail = () => {
             </div>
             <div className="detail-section_skills">
               <p className="detail-section_skills--text">HTML / CSS / JS</p>
-              <ButtonExternal text="visit website" link="#" />
+              <div className="detail-section_skills--buttons">
+                <ButtonExternal
+                  text="LIVE"
+                  link="https://entertainment-app-blazejpak.vercel.app/"
+                />
+                <ButtonExternal
+                  text="GITHUB"
+                  link="https://github.com/blazejpak/Entertainment-app"
+                />
+              </div>
             </div>
           </div>
           <div className="line"></div>
