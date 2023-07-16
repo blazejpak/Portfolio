@@ -4,7 +4,7 @@ const Button = ({ onClick, text }) => {
   return (
     <div onClick={onClick} className="button">
       <div className="button_arrow">
-        <img src={downArrows} />
+        <img src={downArrows} alt="Down Arrow" />
       </div>
       <div className="button_text">
         <p className="button_text--style">{text}</p>
