@@ -12,12 +12,12 @@ const Dictionary = ({ index }) => {
         className="portfolio_image--detail"
       />
       <div className="portfolio_info">
-        <h2>Dictionary</h2>
+        <h2>Dictionary App</h2>
         <p>
-          This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Grid and JavaScript
-          for the areas that required interactivity, such as the testimonial
-          slider.
+          This project is created with using Dictionary API. I used here Raect
+          with TypeScript, Redux to manage states, TailwindCSS for styling and
+          Framer Motion for animation. This is fully responsive website, where
+          you can change the colour themes and font selection.
         </p>
         <ButtonSite text="view project" link="/portfolio/dictionary" />
       </div>

@@ -13,10 +13,8 @@ const Todo = ({ index }) => {
       <div className="portfolio_info">
         <h2>Todo App</h2>
         <p>
-          This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Grid and JavaScript
-          for the areas that required interactivity, such as the testimonial
-          slider.
+          This is a fully responsive classic Todo App. This app includes a
+          dark/light theme toggle and drag & drop reordering.
         </p>
         <ButtonSite text="view project" link="/portfolio/todo" />
       </div>

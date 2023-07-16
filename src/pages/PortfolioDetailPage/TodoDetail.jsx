@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { RxDotFilled } from "react-icons/rx";
+
 import ButtonExternal from "../../UI/ButtonExternal";
 import ButtonNavigatePortfolio from "../../UI/ButtonNavigatePortfolio";
 import InterestContact from "../../components/InterestContact";
@@ -6,11 +10,37 @@ import todoImg from "../../assets/images/todo_dark.webp";
 import todoImgLight from "../../assets/images/todo_light.webp";
 
 const TodoDetail = () => {
+  const images = [
+    {
+      src: todoImg,
+      alt: "Image of todo app",
+    },
+    { src: todoImgLight, alt: "Image of todo app in light mode" },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === images.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
     <section className="detail-section">
       <img
         src={todoImg}
-        alt="Image of Dictionary App Website"
+        alt="Image of Todo App Website"
         className="detail-section_images--heading"
       />
       <div className="detail-section_content">
@@ -20,10 +50,8 @@ const TodoDetail = () => {
             <div>
               <h2 className="detail-section--heading">Todo App</h2>
               <p>
-                This project required me to build a fully responsive landing
-                page to the designs provided. I used HTML5, along with CSS Grid
-                and JavaScript for the areas that required interactivity, such
-                as the testimonial slider.
+                This is a fully responsive classic Todo App. This app includes a
+                dark/light theme toggle and drag & drop reordering.
               </p>
             </div>
             <div className="detail-section_skills">
@@ -46,24 +74,47 @@ const TodoDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was a front-end challenge from Frontend Mentor. It’s
-              a platform that enables you to practice building websites to a
-              design and project brief. Each challenge includes mobile and
-              desktop designs to show how the website should look at different
-              screen sizes. Creating these projects has helped me refine my
-              workflow and solve real-world coding problems. I’ve learned
-              something new with each project, helping me to improve and adapt
-              my style.
+              This project was created by Front End Mentor in Figma and
+              developed by me. I utilized React to implement the app's
+              functionalities, and Tailwind CSS for styling. Users have the
+              ability to select color themes and filter todos based on their
+              states, such as all, active, and completed.
             </p>
           </div>
           <div>
             <h3 className="detail-section--heading">Static Previews</h3>
-            <div className="detail-section_images">
-              <img src={todoImg} className="detail-section_images--image" />
-              <img
-                src={todoImgLight}
-                className="detail-section_images--image"
-              />
+            <div className="detail-section_images-box">
+              <div className="detail-section_images">
+                <button className="detail-section_images--button detail-section_images--button-prev">
+                  <AiOutlineArrowLeft size={32} onClick={prevSlide} />
+                </button>
+                <button className="detail-section_images--button detail-section_images--button-next">
+                  <AiOutlineArrowRight size={32} onClick={nextSlide} />
+                </button>
+                <div
+                  role="img"
+                  aria-label={images[currentIndex].alt}
+                  style={{
+                    backgroundImage: `url(${images[currentIndex].src})`,
+                  }}
+                  className="detail-section_images--image"
+                ></div>
+              </div>
+              <div className="detail-section_images--dots">
+                {images.map((slide, slideIndex) => (
+                  <div
+                    key={slideIndex}
+                    onClick={() => goToSlide(slideIndex)}
+                    className={`detail-section_images--dots-button ${
+                      slideIndex === currentIndex
+                        ? "detail-section_images--dots-button_active"
+                        : ""
+                    }`}
+                  >
+                    <RxDotFilled size={32} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

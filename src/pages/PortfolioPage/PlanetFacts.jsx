@@ -13,10 +13,10 @@ const PlanetFacts = ({ index }) => {
       <div className="portfolio_info">
         <h2>Planets Facts</h2>
         <p>
-          This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Grid and JavaScript
-          for the areas that required interactivity, such as the testimonial
-          slider.
+          I have developed a fully responsive multi-page website where you can
+          explore and read interesting facts about the planets orbiting around
+          the Sun. Each page of the website is dedicated to a specific planet in
+          our solar system.
         </p>
         <ButtonSite text="view project" link="/portfolio/planetfacts" />
       </div>

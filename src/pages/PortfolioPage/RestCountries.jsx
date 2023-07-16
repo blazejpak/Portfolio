@@ -13,10 +13,10 @@ const RestCountries = ({ index }) => {
       <div className="portfolio_info">
         <h2>Rest Countries</h2>
         <p>
-          This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Grid and JavaScript
-          for the areas that required interactivity, such as the testimonial
-          slider.
+          This project was created using the RestCountries API. It is a fully
+          responsive website where you can read information about various
+          countries. You have the ability to choose colour themes, search for
+          specific countries, and filter them based on your preferences.
         </p>
         <ButtonSite text="view project" link="/portfolio/restcountries" />
       </div>
