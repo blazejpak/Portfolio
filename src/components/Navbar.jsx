@@ -37,7 +37,11 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <Logo color="#33323d" />
-        <Link className="navbar_toggle" onClick={activeHandler}>
+        <Link
+          className="navbar_toggle"
+          onClick={activeHandler}
+          aria-label="Menu handler"
+        >
           {!active ? <CgMenu size={32} /> : <RxCross1 size={32} />}
         </Link>
         <AnimatePresence>
@@ -64,6 +68,7 @@ const Navbar = () => {
               <ul>
                 <li>
                   <Link
+                    aria-label="Home Link"
                     to="/"
                     className={`navbar_link ${
                       location.pathname === "/" ? "navbar_link--active" : ""
@@ -75,6 +80,7 @@ const Navbar = () => {
 
                 <li>
                   <Link
+                    aria-label="Portfolio Link"
                     to="/portfolio"
                     className={`navbar_link ${
                       location.pathname === "/portfolio"
@@ -87,6 +93,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
+                    aria-label="Contact Link"
                     to="/contact"
                     className={`navbar_link ${
                       location.pathname === "/contact"

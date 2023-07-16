@@ -11,13 +11,14 @@ const Footer = () => {
 
       <ul className="footer_links">
         <li>
-          <Link to="/" className="footer_link">
+          <Link to="/" className="footer_link" aria-label="Home Link">
             HOME
           </Link>
         </li>
 
         <li>
           <Link
+            aria-label="Portfolio Link"
             to="/portfolio"
             className="footer_link"
             preventScrollReset={true}
@@ -26,7 +27,7 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="footer_link">
+          <Link to="/contact" className="footer_link" aria-label="Contact Link">
             CONTACT ME
           </Link>
         </li>

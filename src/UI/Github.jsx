@@ -2,7 +2,7 @@ import React from "react";
 
 const Github = ({ fill }) => {
   return (
-    <a href="https://github.com/blazejpak">
+    <a href="https://github.com/blazejpak" aria-label="Gitgub Link">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
         <path
           fill={fill}

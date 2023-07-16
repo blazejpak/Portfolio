@@ -2,7 +2,10 @@ import React from "react";
 
 const Linkedin = ({ fill }) => {
   return (
-    <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpl.linkedin.com%2F">
+    <a
+      href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpl.linkedin.com%2F"
+      aria-label="Linkedin Link"
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
         <path
           fill={fill}

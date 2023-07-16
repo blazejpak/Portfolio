@@ -2,7 +2,10 @@ import React from "react";
 
 const FrontendMentor = () => {
   return (
-    <a href="https://www.frontendmentor.io/profile/blazejpak">
+    <a
+      href="https://www.frontendmentor.io/profile/blazejpak"
+      aria-label="FEM Link"
+    >
       <svg
         role="img"
         height="20"
