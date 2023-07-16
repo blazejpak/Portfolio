@@ -55,7 +55,7 @@ const TodoDetail = () => {
               </p>
             </div>
             <div className="detail-section_skills">
-              <p className="detail-section_skills--text">HTML / CSS / JS</p>
+              <p className="detail-section_skills--text">React / TailwindCSS</p>
               <div className="detail-section_skills--buttons">
                 <ButtonExternal
                   text="LIVE"
@@ -121,9 +121,9 @@ const TodoDetail = () => {
       </div>
       <ButtonNavigatePortfolio
         leftProject="RestCountries"
-        rightProject="Planet Facts"
+        rightProject="Entertainment"
         navigateLeft="restcountries"
-        navigateRight="planetfacts"
+        navigateRight="entertainment"
       />
       <InterestContact />
     </section>
