@@ -34,7 +34,7 @@
     margin-right: auto;
     gap: 3.2rem;
     height: 160px;
-    width: 220px;
+    width: 240px;
 
     margin-bottom: 6.4rem;
 
@@ -114,11 +114,20 @@
   }
 }
 
-@media (min-width: variables.$breakpoint-phone--small) {
+@media (min-width: 340px) {
   .detail-section {
     &_images {
-      height: 250px;
-      width: 310px;
+      height: 220px;
+      width: 270px;
+    }
+  }
+}
+
+@media (min-width: 460px) {
+  .detail-section {
+    &_images {
+      height: 300px;
+      width: 380px;
     }
   }
 }
