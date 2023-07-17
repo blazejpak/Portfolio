@@ -54,9 +54,9 @@ const DictionaryDetail = () => {
               <p>
                 This project is created with using Dictionary API. I used here
                 Raect with TypeScript, Redux to manage states, TailwindCSS for
-                styling and Framer Motion for animation. This is fully
-                responsive website, where you can change the colour themes and
-                font selection.
+                styling and Framer Motion for animation. This is a fully
+                responsive website, where you can check the meaning of a written
+                word, find synonyms, and hear the correct pronunciation.
               </p>
             </div>
             <div className="detail-section_skills">

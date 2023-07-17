@@ -19,18 +19,21 @@ const Skills = () => {
         <p>Javascript </p>
       </div>
       <div className="skills_box--text skills_box--text--6">
-        <p>React</p>
+        <p>TypeScript</p>
       </div>
       <div className="skills_box--text skills_box--text--7">
-        <p>React-Router</p>
+        <p>React</p>
       </div>
       <div className="skills_box--text skills_box--text--8">
-        <p>Redux</p>
+        <p>React-Router</p>
       </div>
       <div className="skills_box--text skills_box--text--9">
-        <p>Git</p>
+        <p>Redux</p>
       </div>
       <div className="skills_box--text skills_box--text--10">
+        <p>Git</p>
+      </div>
+      <div className="skills_box--text skills_box--text--11">
         <p>Axios</p>
       </div>
     </div>
