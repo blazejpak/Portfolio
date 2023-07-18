@@ -1,8 +1,8 @@
 @use "../../globals/variables";
 
 .detail-section {
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   &_box {
     display: flex;
@@ -33,8 +33,8 @@
     margin-left: auto;
     margin-right: auto;
     gap: 3.2rem;
-    height: 160px;
-    width: 240px;
+    height: 200px;
+    width: 100%;
 
     margin-bottom: 6.4rem;
 
@@ -118,7 +118,7 @@
   .detail-section {
     &_images {
       height: 220px;
-      width: 270px;
+      width: 100%;
     }
   }
 }
@@ -126,8 +126,7 @@
 @media (min-width: 460px) {
   .detail-section {
     &_images {
-      height: 300px;
-      width: 380px;
+      height: 360px;
     }
   }
 }
@@ -135,8 +134,7 @@
 @media (min-width: variables.$breakpoint-phone) {
   .detail-section {
     &_images {
-      height: 350px;
-      width: 450px;
+      height: 500px;
     }
   }
 }
@@ -155,8 +153,7 @@
     &_images {
       margin-left: 0;
       margin-right: 0;
-      height: 400px;
-      width: 500px;
+      height: 500px;
     }
 
     &_skills {
@@ -184,6 +181,8 @@
     }
 
     &_images {
+      height: 300px;
+
       &--button {
         display: none;
       }

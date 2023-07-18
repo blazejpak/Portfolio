@@ -1,8 +1,8 @@
 @use "../../globals/variables";
 
 .portfolio {
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-bottom: 6.4rem;
 
   &_image--detail {
@@ -79,13 +79,18 @@
 
 @media (min-width: variables.$breakpoint-desktop--large) {
   .portfolio {
+    &_box {
+      justify-content: space-between;
+    }
+
     &_info {
       justify-content: center;
-      width: 50%;
+      width: 40%;
     }
 
     &_image--detail {
-      width: 50%;
+      width: 40%;
+      object-fit: contain;
     }
   }
 }
