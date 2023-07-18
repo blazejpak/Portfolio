@@ -86,10 +86,18 @@ const TodoDetail = () => {
             <div className="detail-section_images-box">
               <div className="detail-section_images">
                 <button className="detail-section_images--button detail-section_images--button-prev">
-                  <AiOutlineArrowLeft size={32} onClick={prevSlide} />
+                  <AiOutlineArrowLeft
+                    size={32}
+                    onClick={prevSlide}
+                    aria-label="left arrow"
+                  />
                 </button>
                 <button className="detail-section_images--button detail-section_images--button-next">
-                  <AiOutlineArrowRight size={32} onClick={nextSlide} />
+                  <AiOutlineArrowRight
+                    size={32}
+                    onClick={nextSlide}
+                    aria-label="right arrow"
+                  />
                 </button>
                 <div
                   role="img"
