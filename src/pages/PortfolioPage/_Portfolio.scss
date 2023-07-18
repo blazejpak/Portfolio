@@ -51,6 +51,7 @@
 
     &_image--detail {
       width: 50%;
+      object-fit: contain;
     }
   }
 }
