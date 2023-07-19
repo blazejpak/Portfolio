@@ -7,10 +7,36 @@ import { BsArrowBarDown, BsArrowBarUp } from "react-icons/bs";
 
 const Home = () => {
   const [scrollUpVisible, setScrollUpVisible] = useState(false);
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const interestRef = useRef(null);
+  const [isIntersecting, setIsIntersecting] = useState();
+
+  const homeRef = useRef();
+  const aboutRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("home_visible");
+            entry.target.classList.remove("home_invisible");
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.3,
+      }
+    );
+
+    const sections = homeRef.current.children;
+
+    Array.from(sections).forEach((section) => {
+      section.classList.add("home_invisible");
+      observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, [isIntersecting]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,34 +101,13 @@ const Home = () => {
           </p>
         </div>
         <ButtonSite text="go to portfolio" link="/portfolio" />
-        <div
-          className="home_scroll"
-          onClick={() =>
-            skillsRef.current.scrollIntoView({
-              behavior: "smooth",
-              block: "end",
-            })
-          }
-        >
-          <BsArrowBarDown className="home_scroll--icon" />
-        </div>
       </section>
-      <section className="skills" ref={skillsRef}>
+      <section className="skills">
         <h2>Skills</h2>
 
         <Skills />
-        <div
-          className="home_scroll"
-          onClick={() =>
-            interestRef.current.scrollIntoView({
-              behavior: "smooth",
-            })
-          }
-        >
-          <BsArrowBarDown className="home_scroll--icon" />
-        </div>
       </section>
-      <InterestContact pickedRef={interestRef} />
+      <InterestContact />
     </main>
   );
 };

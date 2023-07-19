@@ -5,6 +5,17 @@
   padding-right: 1rem;
   margin-bottom: 6.4rem;
 
+  &_invisible {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  &_visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+  }
+
   &_image--detail {
     object-fit: cover;
     width: 100%;

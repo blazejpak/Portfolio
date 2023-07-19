@@ -1,0 +1,10 @@
+@use "../globals/mixins";
+
+.error {
+  height: 100vh;
+  height: 100dvh;
+
+  @include mixins.flexCenter;
+  flex-direction: column;
+  gap: 2.4rem;
+}

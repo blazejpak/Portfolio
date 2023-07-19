@@ -14,7 +14,7 @@ import PortfolioDetail from "./pages/PortfolioDetailPage/PortfolioDetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
+    <Route path="/" element={<Root />} errorElement={<Error />}>
       <Route path="/" errorElement={<Error />} element={<Home />} />
       <Route path="/contact" errorElement={<Error />} element={<Contact />} />
       <Route

@@ -10,6 +10,17 @@
 
   flex-direction: column;
 
+  &_visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+  }
+
+  &_invisible {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
   &_absolute {
     @include mixins.flexCenter;
     background-color: variables.$secondary-color--bg;
@@ -82,8 +93,7 @@
   @include mixins.flexCenter;
   flex-direction: column;
   gap: 3.2rem;
-  height: 100%;
-  height: 100dvh;
+  margin-bottom: 6.4rem;
 
   h2 {
     font-size: 4rem;
@@ -97,11 +107,15 @@
 
   &_text {
     font-size: 2.4rem;
+    background-color: variables.$primary-color--extra;
+    padding: 2rem;
+    border-radius: 5px;
   }
 
   &_text--more {
     font-size: 1.4rem;
     line-height: 25px;
+    margin-bottom: 1.6rem;
   }
 }
 
@@ -109,8 +123,7 @@
   @include mixins.flexCenter;
   gap: 3.2rem;
   flex-direction: column;
-  height: 100vh;
-  height: 100dvh;
+  margin-bottom: 6.4rem;
 }
 
 @media (min-width: variables.$breakpoint-phone) {
@@ -152,10 +165,6 @@
 
     &_text {
       width: 100%;
-
-      background-color: variables.$primary-color--extra;
-      padding: 2rem;
-      border-radius: 5px;
     }
     &_text--more {
       width: 100%;
@@ -174,6 +183,14 @@
 
     h2 {
       font-size: 5.6rem;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint-desktop--large) {
+  .hero {
+    h1 {
+      font-size: 7.2rem;
     }
   }
 }
