@@ -4,6 +4,7 @@ import InterestContact from "../../components/InterestContact";
 import Button from "../../UI/Button";
 import ButtonSite from "../../UI/ButtonSite";
 import { BsArrowBarDown, BsArrowBarUp } from "react-icons/bs";
+import headerImg from "../../assets/images/header.jpg";
 
 const Home = () => {
   const [scrollUpVisible, setScrollUpVisible] = useState(false);
@@ -70,9 +71,20 @@ const Home = () => {
     <main className="home" ref={homeRef}>
       {scrollUp}
       <section className="hero">
-        <p className="hero_text">Hi, my name is</p>
-        <h1 className="hero_heading-primary">Błażej Pakuła</h1>
-        <h2 className="hero_heading-secondary">I'm a Front End Developer</h2>
+        <div className="hero_box">
+          <div className="hero_box--text">
+            <p className="hero_text">Hi, my name is</p>
+            <h1 className="hero_heading-primary">Błażej Pakuła</h1>
+            <h2 className="hero_heading-secondary">
+              I'm a Front End Developer
+            </h2>
+          </div>
+          <img
+            src={headerImg}
+            alt="Image of code in vistual studio code"
+            className="hero_image"
+          />
+        </div>
         <Button
           text="about me"
           onClick={() =>
