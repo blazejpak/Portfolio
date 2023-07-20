@@ -12,11 +12,7 @@ const Portfolio = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
-        console.log(isIntersecting);
-
         entries.forEach((entry) => {
-          console.log(entry);
           if (entry.isIntersecting) {
             entry.target.classList.add("portfolio_visible");
             entry.target.classList.remove("portfolio_invisible");
@@ -30,8 +26,7 @@ const Portfolio = () => {
     );
 
     const portfolios = portfolioRef.current.children;
-    console.log(observer);
-    console.log(portfolios);
+
     Array.from(portfolios).forEach((portfolio) => {
       portfolio.classList.add("portfolio_invisible");
       observer.observe(portfolio);

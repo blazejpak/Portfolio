@@ -12,6 +12,7 @@ const Home = () => {
 
   const homeRef = useRef();
   const aboutRef = useRef();
+  console.log(aboutRef.current);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -87,12 +88,13 @@ const Home = () => {
         </div>
         <Button
           text="about me"
-          onClick={() =>
-            aboutRef.current.scrollIntoView({
+          onClick={() => {
+            const aboutPosition = aboutRef.current.getBoundingClientRect().top;
+            return window.scrollTo({
+              top: window.pageYOffset + aboutPosition - 100,
               behavior: "smooth",
-              block: "center",
-            })
-          }
+            });
+          }}
         />
       </section>
       <section className="about" id="about" ref={aboutRef}>
