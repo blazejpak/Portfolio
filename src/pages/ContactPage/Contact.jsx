@@ -66,7 +66,7 @@ const Contact = () => {
               I would love to hear about what you are working on and how I could
               help. I am currently looking for an intern or junior job. My
               preference would be to find a position in a company in Trójmiasto.
-              But I am also happy to hear about opportunites that do not fit
+              But I am also happy to hear about opportunities that do not fit
               that description. Please feel free to check out my online profiles
               below and get in touch using the form.
             </p>

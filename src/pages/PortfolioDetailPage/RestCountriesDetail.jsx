@@ -70,7 +70,7 @@ const RestCountries = () => {
               <p>
                 This project was created using the RestCountries API. It is a
                 fully responsive website where you can read information about
-                various countries. You have the ability to choose colour themes,
+                various countries. You have the ability to choose color themes,
                 search for specific countries, and filter them based on your
                 preferences.
               </p>
@@ -97,12 +97,12 @@ const RestCountries = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was designed by Frontend Mentor in Figma and
-              developed by me. I utilized React along with its hooks to
-              effectively manage states and effects in the application. For
-              navigation, I implemented React-Router. To fetch data from the
-              API, I utilized the axios library. The styling was accomplished
-              using Tailwind CSS.
+              This project was designed by a Frontend Mentor in Figma and
+              developed by me. I used React with its hooks to effectively manage
+              states and effects in the application. For navigation, I
+              implemented React-Router. To fetch data from the API, I utilized
+              the Axios library. The styling was accomplished using Tailwind
+              CSS.
             </p>
           </div>
           <div>

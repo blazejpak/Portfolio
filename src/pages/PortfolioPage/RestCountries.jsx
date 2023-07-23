@@ -15,7 +15,7 @@ const RestCountries = ({ index }) => {
         <p>
           This project was created using the RestCountries API. It is a fully
           responsive website where you can read information about various
-          countries. You have the ability to choose colour themes, search for
+          countries. You have the ability to choose color themes, search for
           specific countries, and filter them based on your preferences.
         </p>
         <ButtonSite text="view project" link="/portfolio/restcountries" />

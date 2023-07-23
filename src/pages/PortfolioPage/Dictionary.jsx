@@ -14,9 +14,9 @@ const Dictionary = ({ index }) => {
       <div className="portfolio_info">
         <h2>Dictionary App</h2>
         <p>
-          This project is created with using Dictionary API. I used here Raect
-          with TypeScript, Redux to manage states, TailwindCSS for styling and
-          Framer Motion for animation. This is a fully responsive website, where
+          This project was created using the Dictionary API. I used Raect with
+          TypeScript, Redux to manage states, TailwindCSS for styling, and
+          Framer Motion for animation. This is a fully responsive website where
           you can check the meaning of a written word, find synonyms, and hear
           the correct pronunciation.
         </p>

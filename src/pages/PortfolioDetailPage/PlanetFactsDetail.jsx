@@ -83,7 +83,7 @@ const PlanetFactsDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was created by Front End Mentor in Figma and
+              This project was created by a Front End Mentor in Figma and
               developed by me. I used React with its various hooks to manage
               states and effects. For navigation, I employed React Router. The
               styling was done using Tailwind CSS, and for animating the

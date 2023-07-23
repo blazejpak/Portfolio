@@ -58,7 +58,7 @@ const EntertainmentDetail = () => {
               <h2 className="detail-section--heading">Entertainment App</h2>
               <p>
                 Fully responsive multi-page Entertainment App where you can sign
-                in / sign up, search and bookmark favorite movie / serial.
+                in / sign up, search and bookmark your favorite movie / serial.
               </p>
             </div>
             <div className="detail-section_skills">
@@ -83,11 +83,11 @@ const EntertainmentDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was designed by FrontEnd Mentor in Figma and
+              This project was designed by a FrontEnd Mentor in Figma and
               developed by me. I used React with hooks like useContext,
-              useEffect, and useState to manage application. For navigation, I
+              useEffect, and useState to manage applications. For navigation, I
               employed React-Router. Authentication was implemented using
-              firebase. To style the app I used TailwindCSS. This project
+              Firebase. To style the app, I used TailwindCSS. This project
               contains static data that allows you to search, filter, and
               bookmark series and movies.
             </p>

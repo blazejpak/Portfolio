@@ -15,7 +15,7 @@ const Entertainment = ({ index }) => {
         <h2>Entertainment App</h2>
         <p>
           Fully responsive multi-page Entertainment App where you can sign in /
-          sign up, search and bookmark favorite movie / serial.
+          sign up, search and bookmark your favorite movie / serial.
         </p>
         <ButtonSite text="view project" link="/portfolio/entertainment" />
       </div>

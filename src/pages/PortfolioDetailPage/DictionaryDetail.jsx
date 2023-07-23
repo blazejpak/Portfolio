@@ -52,10 +52,10 @@ const DictionaryDetail = () => {
             <div>
               <h2 className="detail-section--heading">Dictionary App</h2>
               <p>
-                This project is created with using Dictionary API. I used here
-                Raect with TypeScript, Redux to manage states, TailwindCSS for
-                styling and Framer Motion for animation. This is a fully
-                responsive website, where you can check the meaning of a written
+                This project was created using the Dictionary API. I used Raect
+                with TypeScript, Redux to manage states, TailwindCSS for
+                styling, and Framer Motion for animation. This is a fully
+                responsive website where you can check the meaning of a written
                 word, find synonyms, and hear the correct pronunciation.
               </p>
             </div>
@@ -81,11 +81,11 @@ const DictionaryDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was designed by Front End Mentor in Figma and
+              This project was designed by a Front End Mentor in Figma and
               developed by me. I used React with hooks to manage states or
               effects in components, but I also used Redux to manage states in
-              whole application. This project includes data from an external API
-              that allows you to check, for example synonyms, meaning, or
+              the whole application. This project includes data from an external
+              API that allows you to check, for example, synonyms, meaning, or
               pronunciation.
             </p>
           </div>

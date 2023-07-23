@@ -50,7 +50,7 @@ const TodoDetail = () => {
             <div>
               <h2 className="detail-section--heading">Todo App</h2>
               <p>
-                This is a fully responsive classic Todo App. This app includes a
+                It is a fully responsive classic Todo App. This app includes a
                 dark/light theme toggle and drag & drop reordering.
               </p>
             </div>
@@ -74,7 +74,7 @@ const TodoDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was created by Front End Mentor in Figma and
+              This project was created by a Front End Mentor in Figma and
               developed by me. I utilized React to implement the app's
               functionalities, and Tailwind CSS for styling. Users have the
               ability to select color themes and filter todos based on their

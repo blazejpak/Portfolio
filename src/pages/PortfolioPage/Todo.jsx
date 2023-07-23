@@ -13,7 +13,7 @@ const Todo = ({ index }) => {
       <div className="portfolio_info">
         <h2>Todo App</h2>
         <p>
-          This is a fully responsive classic Todo App. This app includes a
+          It is a fully responsive classic Todo App. This app includes a
           dark/light theme toggle and drag & drop reordering.
         </p>
         <ButtonSite text="view project" link="/portfolio/todo" />
