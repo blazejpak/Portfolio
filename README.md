@@ -11,10 +11,13 @@ https://portfolio-blazejpak.vercel.app/
 
 ## Installation
 
-
+Windows
 ```bash
   npm install
-  OR
+```
+
+  MacOS
+  ```bash
   yarn install
 ```
     
