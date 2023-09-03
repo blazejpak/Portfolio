@@ -1,12 +1,11 @@
 import ButtonSite from "../../UI/ButtonSite";
-import imgRestCountries from "../../assets/images/restCountries--dark.webp";
 
 const RestCountries = ({ index }) => {
   const isEven = index % 2 === 0;
   return (
     <div className={`portfolio_box ${isEven ? "portfolio_box--reverse" : ""}`}>
       <img
-        src={imgRestCountries}
+        src="/assets/images/restCountries/restCountries--dark.webp"
         alt="Entertainment app"
         className="portfolio_image--detail"
       />

@@ -6,19 +6,18 @@ import ButtonExternal from "../../UI/ButtonExternal";
 import ButtonNavigatePortfolio from "../../UI/ButtonNavigatePortfolio";
 import InterestContact from "../../components/InterestContact";
 
-import planetFactsImg from "../../assets/images/planetFacts.webp";
-import planetFactsImgDetail from "../../assets/images/planetFacts--detail.webp";
-import planetFactsImgDetatilMore from "../../assets/images/planetFacts--more-detail.webp";
-
 const PlanetFactsDetail = () => {
   const images = [
     {
-      src: planetFactsImg,
+      src: "/assets/images/planetFacts/planetFacts.webp",
       alt: "Image of planet facts site",
     },
-    { src: planetFactsImgDetail, alt: "Image of planet facts site in detail" },
     {
-      src: planetFactsImgDetatilMore,
+      src: "/assets/images/planetFacts/planetFacts--detail.webp",
+      alt: "Image of planet facts site in detail",
+    },
+    {
+      src: "/assets/images/planetFacts/planetFacts--more-detail.webp",
       alt: "Image of planet facts site with more detail",
     },
   ];
@@ -44,7 +43,7 @@ const PlanetFactsDetail = () => {
   return (
     <section className="detail-section">
       <img
-        src={planetFactsImg}
+        src="/assets/images/planetFacts/planetFacts.webp"
         alt="Image of Planet Facts Website"
         className="detail-section_images--heading"
       />

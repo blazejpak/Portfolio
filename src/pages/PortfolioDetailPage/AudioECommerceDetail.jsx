@@ -9,15 +9,28 @@ import InterestContact from "../../components/InterestContact";
 const DictionaryDetail = () => {
   const images = [
     {
-      src: "/assets/images/dictionary/dictionary.webp",
-      alt: "Image of Dictionary app",
+      src: "/assets/images/audiophile/audiophile-mainPage-desktop.webp",
+      alt: "Image of Dictionary app with details",
     },
     {
-      src: "/assets/images/dictionary/dictionary_light.webp",
+      src: "/assets/images/audiophile/audiophile-emptyCart-desktop.webp",
+      alt: "Image of Dictionary app with details",
+    },
+    {
+      src: "/assets/images/audiophile/audiophile-cartFilled-desktop.webp",
       alt: "Image of Dictionary app in light mode",
     },
     {
-      src: "/assets/images/dictionary/dictionary--font.webp",
+      src: "/assets/images/audiophile/audiophile-productDetail-desktop.webp",
+      alt: "Image of Dictionary app with details",
+    },
+    {
+      src: "/assets/images/audiophile/audiophile-checkout-desktop.webp",
+      alt: "Image of Dictionary app with details",
+    },
+
+    {
+      src: "/assets/images/audiophile/audiophile-orderConfirmation-desktop.webp",
       alt: "Image of Dictionary app with details",
     },
   ];
@@ -43,8 +56,8 @@ const DictionaryDetail = () => {
   return (
     <section className="detail-section">
       <img
-        src="/assets/images/dictionary/dictionary.webp"
-        alt="Image of Dictionary App Website"
+        src="/assets/images/audiophile/audiophile-mainPage-desktop.webp"
+        alt="Image of Audio eCommerce Website"
         className="detail-section_images--heading"
       />
       <div className="detail-section_content">
@@ -52,7 +65,9 @@ const DictionaryDetail = () => {
           <div className="line"></div>
           <div className="detail-section_subject">
             <div>
-              <h2 className="detail-section--heading">Dictionary App</h2>
+              <h2 className="detail-section--heading">
+                Audio eCommerce Website
+              </h2>
               <p>
                 This project was created using the Dictionary API. I used Raect
                 with TypeScript, Redux to manage states, TailwindCSS for
@@ -68,11 +83,11 @@ const DictionaryDetail = () => {
               <div className="detail-section_skills--buttons">
                 <ButtonExternal
                   text="LIVE"
-                  link="https://dictionary-web-app-blazejpak.vercel.app/"
+                  link="https://audio-e-commerce-blazejpak.vercel.app/"
                 />
                 <ButtonExternal
                   text="GITHUB"
-                  link="https://github.com/blazejpak/dictionary-web-app"
+                  link="https://github.com/blazejpak/Audio-eCommerce"
                 />
               </div>
             </div>
@@ -138,10 +153,10 @@ const DictionaryDetail = () => {
         </div>
       </div>
       <ButtonNavigatePortfolio
-        leftProject="Entertainment"
-        rightProject="Planet Facts"
-        navigateLeft="entertainment"
-        navigateRight="planetfacts"
+        leftProject="Todo"
+        rightProject="Entertainment"
+        navigateLeft="todo"
+        navigateRight="entertainment"
       />
       <InterestContact />
     </section>

@@ -4,6 +4,7 @@ import Dictionary from "./Dictionary";
 import PlanetFacts from "./PlanetFacts";
 import RestCountries from "./RestCountries";
 import Todo from "./Todo";
+import Audio from "./Audio";
 
 const Portfolio = () => {
   const portfolioRef = useRef();
@@ -39,23 +40,27 @@ const Portfolio = () => {
     <main className="portfolio">
       <section ref={portfolioRef}>
         <div className="">
-          <Entertainment index={1} />
+          <Audio index={1} />
           <div className="line"></div>
         </div>
         <div className="">
-          <Dictionary index={2} />
+          <Entertainment index={2} />
           <div className="line"></div>
         </div>
         <div className="">
-          <PlanetFacts index={3} />
+          <Dictionary index={3} />
           <div className="line"></div>
         </div>
         <div className="">
-          <RestCountries index={4} />
+          <PlanetFacts index={4} />
           <div className="line"></div>
         </div>
         <div className="">
-          <Todo index={5} />
+          <RestCountries index={5} />
+          <div className="line"></div>
+        </div>
+        <div className="">
+          <Todo index={6} />
         </div>
       </section>
     </main>

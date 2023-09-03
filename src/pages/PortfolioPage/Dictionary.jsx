@@ -1,5 +1,4 @@
 import ButtonSite from "../../UI/ButtonSite";
-import imgDictionary from "../../assets/images/dictionary.webp";
 
 const Dictionary = ({ index }) => {
   const isEven = index % 2 === 0;
@@ -7,7 +6,7 @@ const Dictionary = ({ index }) => {
   return (
     <div className={`portfolio_box ${isEven ? "portfolio_box--reverse" : ""}`}>
       <img
-        src={imgDictionary}
+        src="/assets/images/dictionary/dictionary.webp"
         alt="Entertainment app"
         className="portfolio_image--detail"
       />

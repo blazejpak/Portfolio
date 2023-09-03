@@ -6,21 +6,22 @@ import ButtonExternal from "../../UI/ButtonExternal";
 import ButtonNavigatePortfolio from "../../UI/ButtonNavigatePortfolio";
 import InterestContact from "../../components/InterestContact";
 
-import entertainmentImg from "../../assets/images/entertainment.webp";
-import entertainmentImgLogin from "../../assets/images/entertainment--login.webp";
-import entertainmentImgLoginError from "../../assets/images/entertainment--login-error.webp";
-import entertainmentImgBookmarked from "../../assets/images/entertainment--bookmarked.webp";
-
 const EntertainmentDetail = () => {
   const images = [
     {
-      src: entertainmentImgLogin,
+      src: "/assets/images/entertainment/entertainment.webp",
       alt: "Image of sign in site",
     },
-    { src: entertainmentImgLoginError, alt: "Image of error login " },
-    { src: entertainmentImg, alt: "Image of entertainment site" },
     {
-      src: entertainmentImgBookmarked,
+      src: "/assets/images/entertainment/entertainment--login.webp",
+      alt: "Image of error login ",
+    },
+    {
+      src: "/assets/images/entertainment/entertainment--login-error.webp",
+      alt: "Image of entertainment site",
+    },
+    {
+      src: "/assets/images/entertainment/entertainment--bookmarked.webp",
       alt: "Image of bookmarked movies or series",
     },
   ];
@@ -46,7 +47,7 @@ const EntertainmentDetail = () => {
   return (
     <section className="detail-section">
       <img
-        src={entertainmentImg}
+        src="/assets/images/entertainment/entertainment.webp"
         alt="Image of Entertainment App Website"
         className="detail-section_images--heading"
       />

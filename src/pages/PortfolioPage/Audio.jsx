@@ -6,17 +6,17 @@ const Entertainment = ({ index }) => {
   return (
     <div className={`portfolio_box ${isEven ? "portfolio_box--reverse" : ""}`}>
       <img
-        src="/assets/images/entertainment/entertainment.webp"
+        src="/assets/images/audiophile/audiophile-mainPage-desktop.webp"
         alt="Entertainment app"
         className="portfolio_image--detail"
       />
       <div className="portfolio_info">
-        <h2>Entertainment App</h2>
+        <h2>Audio eCommerce Website</h2>
         <p>
           Fully responsive multi-page Entertainment App where you can sign in /
           sign up, search and bookmark your favorite movie / serial.
         </p>
-        <ButtonSite text="view project" link="/portfolio/entertainment" />
+        <ButtonSite text="view project" link="/portfolio/audio" />
       </div>
     </div>
   );

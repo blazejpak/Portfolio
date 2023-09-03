@@ -4,7 +4,6 @@ import InterestContact from "../../components/InterestContact";
 import Button from "../../UI/Button";
 import ButtonSite from "../../UI/ButtonSite";
 import { BsArrowBarDown, BsArrowBarUp } from "react-icons/bs";
-import headerImg from "../../assets/images/header.jpg";
 
 const Home = () => {
   const [scrollUpVisible, setScrollUpVisible] = useState(false);
@@ -12,7 +11,6 @@ const Home = () => {
 
   const homeRef = useRef();
   const aboutRef = useRef();
-  console.log(aboutRef.current);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -81,7 +79,7 @@ const Home = () => {
             </h2>
           </div>
           <img
-            src={headerImg}
+            src="/assets/images/header.jpg"
             alt="Image of code in vistual studio code"
             className="hero_image"
           />

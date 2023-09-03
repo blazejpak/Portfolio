@@ -6,16 +6,16 @@ import ButtonExternal from "../../UI/ButtonExternal";
 import ButtonNavigatePortfolio from "../../UI/ButtonNavigatePortfolio";
 import InterestContact from "../../components/InterestContact";
 
-import todoImg from "../../assets/images/todo_dark.webp";
-import todoImgLight from "../../assets/images/todo_light.webp";
-
 const TodoDetail = () => {
   const images = [
     {
-      src: todoImg,
+      src: "/assets/images/todo/todo_dark.webp",
       alt: "Image of todo app",
     },
-    { src: todoImgLight, alt: "Image of todo app in light mode" },
+    {
+      src: "/assets/images/todo/todo_light.webp",
+      alt: "Image of todo app in light mode",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +39,7 @@ const TodoDetail = () => {
   return (
     <section className="detail-section">
       <img
-        src={todoImg}
+        src="/assets/images/todo/todo_dark.webp"
         alt="Image of Todo App Website"
         className="detail-section_images--heading"
       />

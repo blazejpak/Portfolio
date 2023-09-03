@@ -6,32 +6,26 @@ import ButtonExternal from "../../UI/ButtonExternal";
 import ButtonNavigatePortfolio from "../../UI/ButtonNavigatePortfolio";
 import InterestContact from "../../components/InterestContact";
 
-import restCountriesImg from "../../assets/images/restCountries--dark.webp";
-import restCountriesImgLight from "../../assets/images/restCountries--light.webp";
-import restCountriesImgLightDetail from "../../assets/images/restCountries--light--detail.webp";
-import restCountriesImgFilter from "../../assets/images/restCountries--filter.webp";
-import restCountriesImgSearch from "../../assets/images/restCountries--search.webp";
-
 const RestCountries = () => {
   const images = [
     {
-      src: restCountriesImg,
+      src: "/assets/images/restCountries/restCountries--dark.webp",
       alt: "image of Rest Countries site",
     },
     {
-      src: restCountriesImgLight,
+      src: "/assets/images/restCountries/restCountries--light.webp",
       alt: "image of Rest Countries site in light mode",
     },
     {
-      src: restCountriesImgLightDetail,
+      src: "/assets/images/restCountries/restCountries--light--detail.webp",
       alt: "image of Rest Countries site deatails in light mode",
     },
     {
-      src: restCountriesImgFilter,
+      src: "/assets/images/restCountries/restCountries--filter.webp",
       alt: "image of Rest Countries site with filter feature",
     },
     {
-      src: restCountriesImgSearch,
+      src: "/assets/images/restCountries/restCountries--search.webp",
       alt: "image of Rest Countries site with search feature",
     },
   ];
@@ -57,7 +51,7 @@ const RestCountries = () => {
   return (
     <section className="detail-section">
       <img
-        src={restCountriesImg}
+        src="/assets/images/restCountries/restCountries--dark.webp"
         alt="Image of RestCountries App Website"
         className="detail-section_images--heading"
       />
