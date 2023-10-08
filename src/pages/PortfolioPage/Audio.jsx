@@ -13,8 +13,8 @@ const Entertainment = ({ index }) => {
       <div className="portfolio_info">
         <h2>Audio eCommerce Website</h2>
         <p>
-          Fully responsive multi-page Entertainment App where you can sign in /
-          sign up, search and bookmark your favorite movie / serial.
+          Fully responsive multi-page Audio eCommerce Website with a shopping
+          cart, and checkout process.
         </p>
         <ButtonSite text="view project" link="/portfolio/audio" />
       </div>

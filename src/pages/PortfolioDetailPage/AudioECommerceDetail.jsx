@@ -69,11 +69,8 @@ const DictionaryDetail = () => {
                 Audio eCommerce Website
               </h2>
               <p>
-                This project was created using the Dictionary API. I used Raect
-                with TypeScript, Redux to manage states, TailwindCSS for
-                styling, and Framer Motion for animation. This is a fully
-                responsive website where you can check the meaning of a written
-                word, find synonyms, and hear the correct pronunciation.
+                Fully responsive multi-page Audio eCommerce Website with a
+                shopping cart, and checkout process.
               </p>
             </div>
             <div className="detail-section_skills">
@@ -98,12 +95,13 @@ const DictionaryDetail = () => {
           <div>
             <h3 className="detail-section--heading">Project Background</h3>
             <p>
-              This project was designed by a Front End Mentor in Figma and
-              developed by me. I used React with hooks to manage states or
-              effects in components, but I also used Redux to manage states in
-              the whole application. This project includes data from an external
-              API that allows you to check, for example, synonyms, meaning, or
-              pronunciation.
+              This project was designed by a Frontend Mentor in Figma and
+              developed by me. To create this website, I used React with
+              TypeScript. To style the app, I used TailwindCSS and Framer-Motion
+              for animations. This project contains static data for headphones,
+              speakers, and earphones. You have the possibility to add and
+              delete products from the cart, but also you can finalize the order
+              after completing your delivery details.
             </p>
           </div>
           <div>
