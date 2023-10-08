@@ -36,7 +36,9 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <Logo color="#33323d" />
+        <Link aria-label="Home Link" to="/">
+          <Logo color="#33323d" />
+        </Link>
         <Link
           className="navbar_toggle"
           onClick={activeHandler}
