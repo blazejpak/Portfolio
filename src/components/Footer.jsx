@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../UI/Logo";
 import GitHub from "../UI/Github";
-import Linkedin from "../UI/Linkedin";
 import Fem from "../UI/FrontendMentor";
 
 const Footer = () => {
