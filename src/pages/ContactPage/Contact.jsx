@@ -72,7 +72,6 @@ const Contact = () => {
             </p>
             <div className="contact_socials">
               <Github fill="#33323d" />
-              <Linkedin fill="#33323d" />
               <div className="contact_socials--fem">
                 <FrontendMentor />
               </div>

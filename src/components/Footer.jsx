@@ -36,8 +36,6 @@ const Footer = () => {
       <div className="footer_external">
         <GitHub fill="#fff" />
 
-        <Linkedin fill="#fff" />
-
         <div className="footer_external--fem">
           <Fem />
         </div>

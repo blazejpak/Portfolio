@@ -105,11 +105,10 @@ const Home = () => {
             I am a passionate programmer specialising in responsive design.
             Mainly, I use React and TailwindCSS, but I feel flexible enough to
             use, for example, SCSS for styling. I focus on creating
-            user-friendly interfaces for various devices. I am based in
-            Wejherowo, Poland, but I have no issue working remotely or
-            relocating if needed. When I am not coding, I try to find time for
-            swimming or cycling. Additionally, I am a fan of books, movies, the
-            world, and everything related to the Harry Potter series.
+            user-friendly interfaces for various devices. When I am not coding,
+            I try to find time for swimming or cycling. Additionally, I am a fan
+            of books, movies, the world, and everything related to the Harry
+            Potter series.
           </p>
         </div>
         <ButtonSite text="go to portfolio" link="/portfolio" />
